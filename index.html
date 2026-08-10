@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Greg.Quest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  html, body { margin:0; padding:0; background:#0d0a1a; }
+  a { text-decoration:none; }
+  a:hover { color:#7fe8f2; }
+
+  @keyframes twinkle { 0%,100%{opacity:.15} 50%{opacity:1} }
+  @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+
+  .stars { position:absolute; inset:0; pointer-events:none; }
+  .star { position:absolute; width:4px; height:4px; animation:twinkle 3s infinite; }
+
+  .page {
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    overflow:hidden;
+    background:linear-gradient(#140e29 0%, #241a49 42%, #3d2464 70%, #6d3060 100%);
+    font-family:'Press Start 2P', monospace;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    box-sizing:border-box;
+  }
+
+  .content { position:relative; width:100%; max-width:1080px; display:flex; flex-direction:column; align-items:center; text-align:center; }
+
+  .logo { animation:fadeIn 1.6s ease-out both; display:flex; flex-direction:column; align-items:center; gap:18px; }
+  .tagline { font-size:11px; letter-spacing:6px; color:#7fe8f2; text-shadow:0 3px 0 #1c2f52; }
+  .title {
+    margin:0;
+    font-size:clamp(28px,6.4vw,70px);
+    line-height:1.15;
+    color:#ffe9a8;
+    letter-spacing:2px;
+    text-align:center;
+    text-shadow:4px 0 0 #2a1440, -4px 0 0 #2a1440, 0 -4px 0 #2a1440, 0 4px 0 #2a1440,
+      0 10px 0 #d1356e, 0 18px 0 #7a1c4e, 0 26px 0 #2a1440;
+  }
+  .title .dot { color:#f7a8d8; }
+
+  .links {
+    margin-top:36px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:clamp(18px,4vw,40px);
+    font-size:11px;
+    animation:fadeIn 2s ease-out both;
+  }
+
+  .copyright {
+    margin-top:22px;
+    font-size:9px;
+    letter-spacing:3px;
+    color:#8f7fc2;
+    padding-bottom:40px;
+    animation:fadeIn 2.4s ease-out both;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="stars">
+    <div class="star" style="left:6%; top:11%; background:#fff; animation-duration:3.1s;"></div>
+    <div class="star" style="left:14%; top:24%; background:#9fe8ff; animation-duration:2.3s; animation-delay:.4s;"></div>
+    <div class="star" style="left:21%; top:6%; background:#fff; animation-duration:4s; animation-delay:1.1s;"></div>
+    <div class="star" style="left:31%; top:17%; background:#ffd479; animation-duration:2.8s; animation-delay:.7s;"></div>
+    <div class="star" style="left:44%; top:5%; background:#fff; animation-duration:3.6s; animation-delay:.2s;"></div>
+    <div class="star" style="left:57%; top:13%; background:#f7a8d8; animation-duration:2.6s; animation-delay:.9s;"></div>
+    <div class="star" style="left:68%; top:8%; background:#fff; animation-duration:3.3s; animation-delay:1.4s;"></div>
+    <div class="star" style="left:76%; top:23%; background:#9fe8ff; animation-duration:2.1s; animation-delay:.3s;"></div>
+    <div class="star" style="left:88%; top:10%; background:#fff; animation-duration:3.9s; animation-delay:.6s;"></div>
+    <div class="star" style="left:94%; top:29%; background:#ffd479; animation-duration:2.9s; animation-delay:1.2s;"></div>
+    <div class="star" style="left:38%; top:32%; background:#fff; animation-duration:3.4s; animation-delay:1.7s;"></div>
+    <div class="star" style="left:63%; top:28%; background:#fff; animation-duration:2.4s; animation-delay:.1s;"></div>
+  </div>
+
+  <div class="content">
+    <div class="logo">
+      <div class="tagline">&#9670; A DEV-REL ADVENTURE &#9670;</div>
+      <h1 class="title">GREG<span class="dot">.</span>QUEST</h1>
+    </div>
+
+    <div class="links">
+      <a href="https://www.youtube.com/@Postmarkapp" style="color:#ffe9a8;">YOUTUBE</a>
+      <a href="https://www.linkedin.com/in/gregsvo/" style="color:#7fe8f2;">LINKEDIN</a>
+      <a href="https://gregsvoboda.com" style="color:#f78ab8;">ABOUT</a>
+    </div>
+
+    <div class="copyright">GREG.QUEST &mdash; &copy; 20XX</div>
+  </div>
+
+</div>
+</body>
+</html>
